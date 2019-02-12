@@ -1,0 +1,651 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://kodlar/BaslangicSahne.gd" type="Script" id=1]
+[ext_resource path="res://tileSetler/zeminTile.tres" type="TileSet" id=2]
+[ext_resource path="res://tileSetler/ev_zeminTile.tres" type="TileSet" id=3]
+[ext_resource path="res://tileSetler/duvar.tres" type="TileSet" id=4]
+[ext_resource path="res://tileSetler/mobilya.tres" type="TileSet" id=5]
+[ext_resource path="res://assets/Light/light.png" type="Texture" id=6]
+[ext_resource path="res://assets/sesler/isiklar_acik.wav" type="AudioStream" id=7]
+[ext_resource path="res://kodlar/karekterler.gd" type="Script" id=8]
+[ext_resource path="res://assets/karekterler/manBlue_stand.png" type="Texture" id=9]
+[ext_resource path="res://assets/sesler/switch1.ogg" type="AudioStream" id=10]
+[ext_resource path="res://assets/karekterler/manBrown_stand.png" type="Texture" id=11]
+[ext_resource path="res://assets/sesler/zapThreeToneDown.ogg" type="AudioStream" id=12]
+[ext_resource path="res://kodlar/kameraTasiyici.gd" type="Script" id=13]
+[ext_resource path="res://assets/tiles/tile_443.png" type="Texture" id=14]
+[ext_resource path="res://assets/sesler/door_open.wav" type="AudioStream" id=15]
+[ext_resource path="res://sahneler/ui/giris.tscn" type="PackedScene" id=16]
+[ext_resource path="res://assets/ogeler/busted.png" type="Texture" id=17]
+[ext_resource path="res://sahneler/ui/diyalog.tscn" type="PackedScene" id=18]
+[ext_resource path="res://assets/sesler/atmosfer.wav" type="AudioStream" id=19]
+
+[sub_resource type="Animation" id=1]
+
+resource_name = "babaKalkar"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("baba:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 112.727, 385.574 ), Vector2( 190, 380 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+
+length = 2.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("cocuk:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 172.442 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("cocuk:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.2, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 540, 320 ), Vector2( 223.987, 371.694 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("cocuk/ayak_ses:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.3, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
+[sub_resource type="Animation" id=3]
+
+length = 3.5
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("cocuk:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 1.7, 2.4, 3.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 450.133, -3.34646 ), Vector2( 445.343, 173.281 ), Vector2( 445.343, 173.281 ), Vector2( 446.964, 318.638 ), Vector2( 540, 320 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../kapi:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.1, 1.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 90.0, 90.0, 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("cocuk:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2.4, 2.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 90.0, 90.0, 0.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("cocuk/ayak_ses:playing")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1, 1.7, 3.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true, false ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("../kapi/ses:playing")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 1, 1.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("../isiklar/ses:playing")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 3.5 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("../fon:playing")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=4]
+
+resource_name = "sahneBitis"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("../ui/yakalandi:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[node name="BaslangicSahne" type="Node2D"]
+
+script = ExtResource( 1 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="." index="0"]
+
+color = Color( 0.441406, 0.441406, 0.441406, 1 )
+
+[node name="tiles" type="Node2D" parent="." index="1"]
+
+[node name="dismekanZemin" type="TileMap" parent="tiles" index="0"]
+
+mode = 0
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 64, 64 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( -393219, 1, 0, -393218, 1, 0, -393217, 1, 0, -458752, 1, 0, -458751, 1, 0, -458750, 1, 0, -458749, 1, 0, -458748, 1, 0, -458747, 1, 0, -458746, 13, 0, -458745, 13, 0, -458744, 1, 0, -458743, 1, 0, -458742, 1, 0, -458741, 1, 0, -327681, 1, 0, -393216, 1, 0, -393215, 1, 0, -393214, 1, 0, -393213, 1, 0, -393212, 1, 0, -393211, 1, 0, -393210, 13, 0, -393209, 13, 0, -393208, 1, 0, -393207, 1, 0, -393206, 1, 0, -393205, 1, 0, -393204, 1, 0, -393203, 1, 0, -393202, 1, 0, -262147, 1, 0, -262146, 1, 0, -262145, 1, 0, -327680, 1, 0, -327679, 1, 0, -327678, 1, 0, -327677, 1, 0, -327676, 1, 0, -327675, 1, 0, -327674, 13, 0, -327673, 13, 0, -327672, 1, 0, -327671, 1, 0, -327670, 1, 0, -327669, 1, 0, -327665, -1073741824, 0, -327664, -1073741824, 0, -327663, -1073741824, 0, -327662, -1073741824, 0, -327661, -1073741824, 0, -196611, -1073741824, 0, -196610, -1073741824, 0, -196609, -1073741824, 0, -262144, -1073741824, 0, -262143, -1073741824, 0, -262142, -1073741824, 0, -262141, -1073741824, 0, -262140, -1073741824, 0, -262139, -1073741824, 0, -262138, -1073741812, 0, -262137, -1073741812, 0, -262136, -1073741824, 0, -262135, -1073741824, 0, -262134, -1073741824, 0, -262133, -1073741824, 0, -262132, -1073741824, 0, -262131, -1073741824, 0, -262130, -1073741824, 0, -262129, -1073741824, 0, -262128, -1073741824, 0, -262127, -1073741824, 0, -262126, -1073741824, 0, -262125, -1073741824, 0, -262124, -1073741824, 0, -262123, -1073741824, 0, -131075, -1073741824, 0, -131074, -1073741824, 0, -131073, -1073741824, 0, -196608, -1073741824, 0, -196607, -1073741824, 0, -196606, -1073741824, 0, -196605, -1073741824, 0, -196604, -1073741824, 0, -196603, -1073741824, 0, -196602, -1073741812, 0, -196601, -1073741812, 0, -196600, -1073741824, 0, -196599, -1073741824, 0, -196598, -1073741824, 0, -196597, -1073741824, 0, -196596, -1073741824, 0, -196595, -1073741824, 0, -196594, -1073741824, 0, -196593, -1073741824, 0, -196592, -1073741824, 0, -196591, -1073741824, 0, -196590, -1073741824, 0, -196589, -1073741824, 0, -196588, -1073741824, 0, -196587, -1073741824, 0, -65539, -1073741824, 0, -65538, -1073741824, 0, -65537, -1073741824, 0, -131072, -1073741824, 0, -131071, -1073741824, 0, -131070, -1073741824, 0, -131069, -1073741824, 0, -131068, -1073741824, 0, -131067, -1073741824, 0, -131066, -1073741812, 0, -131065, -1073741812, 0, -131064, -1073741824, 0, -131063, -1073741824, 0, -131062, -1073741824, 0, -131061, -1073741824, 0, -131060, -1073741824, 0, -131059, -1073741824, 0, -131058, -1073741824, 0, -131057, -1073741824, 0, -131056, -1073741824, 0, -131055, -1073741824, 0, -131054, -1073741824, 0, -131053, -1073741824, 0, -131052, -1073741824, 0, -131051, -1073741824, 0, -131050, -1073741824, 0, -131049, -1073741824, 0, -131048, -1073741824, 0, -131047, -1073741824, 0, -3, -1073741824, 0, -2, -1073741824, 0, -1, -1073741824, 0, -65536, -1073741824, 0, -65535, -1073741824, 0, -65534, -1073741824, 0, -65533, -1073741824, 0, -65532, -1073741824, 0, -65531, -1073741824, 0, -65530, -1073741812, 0, -65529, -1073741812, 0, -65528, -1073741824, 0, -65527, -1073741824, 0, -65526, -1073741824, 0, -65525, -1073741824, 0, -65524, -1073741824, 0, -65523, -1073741824, 0, -65522, -1073741824, 0, -65521, -1073741824, 0, -65520, -1073741824, 0, -65519, -1073741824, 0, -65518, -1073741824, 0, -65517, -1073741824, 0, -65516, -1073741824, 0, -65515, -1073741824, 0, -65514, -1073741824, 0, -65513, -1073741824, 0, -65512, -1073741824, 0, 65532, -1073741824, 0, 65533, -1073741824, 0, 65534, -1073741824, 0, 65535, -1073741824, 0, 0, -1073741824, 0, 1, 1610612736, 0, 2, 1610612736, 0, 3, 1610612736, 0, 4, 1610612736, 0, 5, 1610612736, 0, 6, 1610612736, 0, 7, -1073741824, 0, 8, -1073741824, 0, 9, -1073741824, 0, 10, -1073741824, 0, 11, -1073741824, 0, 12, 1610612736, 0, 13, 1610612736, 0, 14, 1610612736, 0, 15, 1610612736, 0, 16, 1610612736, 0, 17, 1610612736, 0, 18, -1073741824, 0, 19, -1073741824, 0, 20, -1073741824, 0, 21, -1073741824, 0, 22, -1073741824, 0, 23, -1073741824, 0, 24, -1073741824, 0, 131067, -1073741824, 0, 131068, -1073741824, 0, 131069, -1073741824, 0, 131070, -1073741824, 0, 131071, -1073741824, 0, 65536, -1073741824, 0, 65537, 1610612736, 0, 65538, 1610612736, 0, 65539, 1610612736, 0, 65540, 1610612736, 0, 65541, 1610612736, 0, 65542, 1610612736, 0, 65543, 1610612736, 0, 65544, 1610612736, 0, 65545, 1610612736, 0, 65546, 1610612736, 0, 65547, 1610612736, 0, 65548, 1610612736, 0, 65549, 1610612736, 0, 65550, 1610612736, 0, 65551, -1073741824, 0, 65552, -1073741824, 0, 65553, -1073741824, 0, 65554, -1073741824, 0, 65555, -1073741824, 0, 65556, -1073741824, 0, 65557, -1073741824, 0, 65558, -1073741824, 0, 65559, -1073741824, 0, 65560, -1073741824, 0, 196603, -1073741824, 0, 196604, -1073741824, 0, 196605, -1073741824, 0, 196606, -1073741824, 0, 196607, -1073741824, 0, 131072, -1073741824, 0, 131073, 1610612736, 0, 131074, 1610612736, 0, 131075, 1610612736, 0, 131076, 1610612736, 0, 131077, 1610612736, 0, 131078, 1610612736, 0, 131079, 1610612736, 0, 131080, 1610612736, 0, 131081, 1610612736, 0, 131082, 1610612736, 0, 131083, 1610612736, 0, 131084, 1610612736, 0, 131085, 1610612736, 0, 131086, 1610612736, 0, 131087, 1610612736, 0, 131088, 1610612736, 0, 131089, 1610612736, 0, 131090, 1610612736, 0, 131091, 1610612736, 0, 131092, 1610612736, 0, 131093, -1073741824, 0, 131094, -1073741824, 0, 131095, -1073741824, 0, 131096, -1073741824, 0, 262139, -1073741824, 0, 262140, -1073741824, 0, 262141, -1073741824, 0, 262142, -1073741824, 0, 262143, -1073741824, 0, 196608, -1073741824, 0, 196613, 1610612736, 0, 196614, 1610612736, 0, 196615, 1610612736, 0, 196629, -1073741824, 0, 196630, -1073741824, 0, 196631, -1073741824, 0, 196632, -1073741824, 0, 327675, -1073741824, 0, 327676, -1073741824, 0, 327677, -1073741824, 0, 327678, -1073741824, 0, 327679, -1073741824, 0, 262144, -1073741824, 0, 262165, -1073741824, 0, 262166, -1073741824, 0, 262167, -1073741824, 0, 262168, -1073741824, 0, 393211, -1073741824, 0, 393212, -1073741824, 0, 393213, -1073741824, 0, 393214, -1073741824, 0, 393215, -1073741824, 0, 327680, -1073741824, 0, 327701, -1073741824, 0, 327702, -1073741824, 0, 327703, -1073741824, 0, 327704, -1073741824, 0, 327705, -1073741824, 0, 458747, -1073741824, 0, 458748, -1073741824, 0, 458749, -1073741824, 0, 458750, -1073741824, 0, 458751, -1073741824, 0, 393216, -1073741824, 0, 393237, -1073741824, 0, 393238, -1073741824, 0, 393239, -1073741824, 0, 393240, -1073741824, 0, 524283, -1073741824, 0, 524284, -1073741824, 0, 524285, -1073741824, 0, 524286, -1073741824, 0, 524287, -1073741824, 0, 458752, -1073741824, 0, 458773, -1073741824, 0, 458774, -1073741824, 0, 458775, -1073741824, 0, 458776, -1073741824, 0, 589819, -1073741824, 0, 589820, -1073741824, 0, 589821, -1073741824, 0, 589822, -1073741824, 0, 589823, -1073741824, 0, 524288, -1073741824, 0, 524309, -1073741824, 0, 524310, -1073741824, 0, 524311, -1073741824, 0, 524312, -1073741824, 0, 655355, -1073741824, 0, 655356, -1073741824, 0, 655357, -1073741824, 0, 655358, -1073741824, 0, 655359, -1073741824, 0, 589824, -1073741824, 0, 589825, -1073741824, 0, 589845, -1073741824, 0, 589846, -1073741824, 0, 589847, -1073741824, 0, 589848, -1073741824, 0, 720891, -1073741824, 0, 720892, -1073741824, 0, 720893, -1073741824, 0, 720894, -1073741824, 0, 720895, -1073741824, 0, 655360, -1073741824, 0, 655361, -1073741824, 0, 655369, -1073741824, 0, 655370, -1073741824, 0, 655371, -1073741824, 0, 655381, -1073741824, 0, 655382, -1073741824, 0, 655383, -1073741824, 0, 655384, -1073741824, 0, 786427, -1073741824, 0, 786428, -1073741824, 0, 786429, -1073741824, 0, 786430, -1073741824, 0, 786431, -1073741824, 0, 720896, -1073741824, 0, 720897, -1073741824, 0, 720898, -1073741824, 0, 720899, -1073741824, 0, 720900, -1073741824, 0, 720901, -1073741824, 0, 720902, -1073741824, 0, 720903, -1073741824, 0, 720904, -1073741824, 0, 720905, -1073741824, 0, 720906, -1073741824, 0, 720907, -1073741824, 0, 720908, -1073741824, 0, 720909, -1073741824, 0, 720910, -1073741824, 0, 720911, -1073741824, 0, 720912, -1073741824, 0, 720913, -1073741824, 0, 720914, -1073741824, 0, 720915, -1073741824, 0, 720916, -1073741824, 0, 720917, -1073741824, 0, 720918, -1073741824, 0, 720919, -1073741824, 0, 720920, -1073741824, 0, 851963, -1073741824, 0, 851964, -1073741824, 0, 851965, -1073741824, 0, 851966, -1073741824, 0, 851967, -1073741824, 0, 786432, -1073741824, 0, 786433, -1073741824, 0, 786434, -1073741824, 0, 786435, -1073741824, 0, 786436, -1073741824, 0, 786437, -1073741824, 0, 786438, -1073741824, 0, 786439, -1073741824, 0, 786440, -1073741824, 0, 786441, -1073741824, 0, 786442, -1073741824, 0, 786443, -1073741824, 0, 786444, -1073741824, 0, 786445, -1073741824, 0, 786446, -1073741824, 0, 786447, -1073741824, 0, 786448, -1073741824, 0, 786449, -1073741824, 0, 786450, -1073741824, 0, 786451, -1073741824, 0, 786452, -1073741824, 0, 786453, -1073741824, 0, 786454, -1073741824, 0, 786455, -1073741824, 0, 786456, -1073741824, 0, 786457, -1073741824, 0, 917499, -1073741824, 0, 917500, -1073741824, 0, 917501, -1073741824, 0, 917502, -1073741824, 0, 917503, -1073741824, 0, 851968, -1073741824, 0, 851969, -1073741824, 0, 851970, -1073741824, 0, 851971, -1073741824, 0, 851972, -1073741824, 0, 851973, -1073741824, 0, 851974, -1073741824, 0, 851975, -1073741824, 0, 851976, -1073741824, 0, 851977, -1073741824, 0, 851978, -1073741824, 0, 851979, -1073741824, 0, 851980, -1073741824, 0, 851981, -1073741824, 0, 851982, -1073741824, 0, 851983, -1073741824, 0, 851984, -1073741824, 0, 851985, -1073741824, 0, 851986, -1073741824, 0, 851987, -1073741824, 0, 851988, -1073741824, 0, 851989, -1073741824, 0, 851990, -1073741824, 0, 851991, -1073741824, 0, 851992, -1073741824, 0, 851993, -1073741824, 0, 983035, -1073741824, 0, 983036, -1073741824, 0, 983037, -1073741824, 0, 983038, -1073741824, 0, 983039, -1073741824, 0, 917504, -1073741824, 0, 917505, -1073741824, 0, 917506, -1073741824, 0, 917507, -1073741824, 0, 917508, -1073741824, 0, 917509, -1073741824, 0, 917510, -1073741824, 0, 917511, -1073741824, 0, 917512, -1073741824, 0, 917513, -1073741824, 0, 917514, -1073741824, 0, 917515, -1073741824, 0, 917516, -1073741824, 0, 917517, -1073741824, 0, 917518, -1073741824, 0, 917519, -1073741824, 0, 917520, -1073741824, 0, 917521, -1073741824, 0, 917522, -1073741824, 0, 917523, -1073741824, 0, 917524, -1073741824, 0, 917525, -1073741824, 0, 917526, -1073741824, 0, 917527, -1073741824, 0, 917528, -1073741824, 0, 1048570, -1073741824, 0, 1048571, -1073741824, 0, 1048572, -1073741824, 0, 1048573, -1073741824, 0, 1048574, -1073741824, 0, 1048575, -1073741824, 0, 983040, -1073741824, 0, 983041, -1073741824, 0, 983042, -1073741824, 0, 983043, -1073741824, 0, 983044, -1073741824, 0, 983045, -1073741824, 0, 983046, -1073741824, 0 )
+
+[node name="dismekanOgeler" type="TileMap" parent="tiles" index="1"]
+
+mode = 0
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 64, 64 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 5, -1610612713, 0, 6, -1610612724, 0, 7, -1610612724, 0, 8, -1610612713, 0, 65537, 30, 0, 65539, 30, 0, 65541, -1610612716, 0, 65542, -1610612724, 0, 65543, -1610612724, 0, 65544, -1610612716, 0, 131077, -1610612713, 0, 131078, -1610612724, 0, 131079, -1610612724, 0, 131080, -1610612713, 0, 196614, -1610612724, 0, 196615, -1610612724, 0, 262147, 27, 0, 262151, 34, 0, 458758, -1610612726, 0, 458759, -1610612726, 0, 458760, -1610612726, 0, 458761, -1610612726, 0, 458762, -1610612726, 0, 458763, -1610612726, 0, 458764, -1610612726, 0, 524294, -1610612726, 0, 524295, -1610612726, 0, 524296, -1610612726, 0, 524297, -1610612726, 0, 524298, -1610612726, 0, 524299, -1610612726, 0, 524300, -1610612726, 0, 589830, -1610612726, 0, 589831, -1610612726, 0, 589832, -1610612726, 0, 589833, -1610612726, 0, 589834, -1610612726, 0, 589835, -1610612726, 0, 589836, -1610612726, 0 )
+
+[node name="salonZemin" type="TileMap" parent="tiles" index="2"]
+
+mode = 0
+tile_set = ExtResource( 3 )
+cell_size = Vector2( 64, 64 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 262145, 9, 0, 262146, 9, 0, 262147, 9, 0, 262148, 9, 0, 262149, 9, 0, 262150, -1073741813, 0, 262151, -1073741813, 0, 262152, -1073741813, 0, 262153, -1073741813, 0, 262154, -1073741813, 0, 262155, -1073741813, 0, 262156, 1610612744, 0, 262157, -1073741813, 0, 262158, -1073741813, 0, 262159, -1073741813, 0, 262160, -1073741813, 0, 262161, -1073741813, 0, 262162, -1073741813, 0, 262163, -1073741813, 0, 327681, 9, 0, 327682, 9, 0, 327683, 9, 0, 327684, 9, 0, 327685, 9, 0, 327686, -1073741813, 0, 327687, -1073741813, 0, 327688, -1073741813, 0, 327689, -1073741813, 0, 327690, -1073741813, 0, 327691, -1073741813, 0, 327692, 1610612744, 0, 327693, -1073741813, 0, 327694, -1073741813, 0, 327695, -1073741813, 0, 327696, -1073741813, 0, 327697, -1073741813, 0, 327698, -1073741813, 0, 327699, -1073741813, 0, 393217, 9, 0, 393218, 9, 0, 393219, 9, 0, 393220, 9, 0, 393221, 9, 0, 393230, -1073741813, 0, 393231, -1073741813, 0, 393232, -1073741813, 0, 393233, -1073741813, 0, 393234, -1073741813, 0, 393235, -1073741813, 0, 458753, 9, 0, 458754, 9, 0, 458755, 9, 0, 458756, 9, 0, 458757, 9, 0, 458766, 0, 0, 458767, 0, 0, 458768, 0, 0, 458769, 0, 0, 458770, 0, 0, 458771, 0, 0, 524289, 9, 0, 524290, 9, 0, 524291, 9, 0, 524292, 9, 0, 524293, 9, 0, 524302, 0, 0, 524303, 0, 0, 524304, 0, 0, 524305, 0, 0, 524306, 0, 0, 524307, 0, 0, 589825, 9, 0, 589826, 9, 0, 589827, 9, 0, 589828, 9, 0, 589829, 9, 0, 589837, 0, 0, 589838, 0, 0, 589839, 0, 0, 589840, 0, 0, 589841, 0, 0, 589842, 0, 0, 589843, 0, 0 )
+
+[node name="mutfakzemin" type="TileMap" parent="tiles" index="3"]
+
+modulate = Color( 0.362885, 0.47526, 0.988281, 1 )
+mode = 0
+tile_set = ExtResource( 3 )
+cell_size = Vector2( 64, 64 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 393222, -1073741823, 0, 393223, -1073741823, 0, 393224, -1073741823, 0, 393225, -1073741823, 0, 393226, -1073741823, 0, 393227, -1073741823, 0, 393228, -1073741823, 0, 393229, -1073741823, 0, 458765, -1073741823, 0, 524301, -1073741823, 0 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="duvarlar" type="TileMap" parent="tiles" index="4"]
+
+mode = 0
+tile_set = ExtResource( 4 )
+cell_size = Vector2( 64, 64 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 196608, 19, 0, 196609, 18, 0, 196610, 18, 0, 196611, 18, 0, 196612, 1610612754, 0, 196613, 18, 0, 196614, 1610612744, 0, 196615, -1073741817, 0, 196616, 18, 0, 196617, 18, 0, 196618, 18, 0, 196619, 18, 0, 196620, 1610612740, 0, 196621, 18, 0, 196622, 18, 0, 196623, 18, 0, 196624, 18, 0, 196625, 18, 0, 196626, 18, 0, 196627, 1610612754, 0, 196628, -1610612717, 0, 262144, -1610612718, 0, 262164, -1610612718, 0, 327680, -1610612718, 0, 327700, -1610612718, 0, 393216, -1610612718, 0, 393222, 1610612754, 0, 393223, 1610612754, 0, 393224, 1610612754, 0, 393225, 1610612754, 0, 393226, 1610612754, 0, 393227, 1610612754, 0, 393228, -1610612733, 0, 393229, -1610612717, 0, 393232, 18, 0, 393233, 18, 0, 393234, 18, 0, 393235, 18, 0, 393236, -1610612718, 0, 458752, -1610612718, 0, 458765, -1610612718, 0, 458772, -1610612718, 0, 524288, -1610612718, 0, 524301, -1610612718, 0, 524308, -1610612718, 0, 589824, -1610612718, 0, 589844, -1610612718, 0, 655360, -1073741805, 0, 655361, 18, 0, 655362, 18, 0, 655363, 18, 0, 655364, 18, 0, 655365, 18, 0, 655366, 18, 0, 655367, 18, 0, 655368, 18, 0, 655369, 18, 0, 655370, 18, 0, 655371, 18, 0, 655372, 18, 0, 655373, 18, 0, 655374, 18, 0, 655375, 18, 0, 655376, 18, 0, 655377, 18, 0, 655378, 18, 0, 655379, 18, 0, 655380, 1610612755, 0 )
+
+[node name="esyalar" type="TileMap" parent="tiles" index="5"]
+
+mode = 0
+tile_set = ExtResource( 5 )
+cell_size = Vector2( 64, 64 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 2, -1073741742, 0, 131084, 23, 0, 262146, 1610612748, 0, 262147, 87, 0, 262148, 88, 0, 327681, -1610612727, 0, 393217, -1610612726, 0, 393218, -1610612722, 0, 393220, -1073741738, 0, 458753, -1610612725, 0, 458758, 74, 0, 458759, 74, 0, 458760, 74, 0, 458761, 1610612812, 0, 458762, 74, 0, 458763, 1610612819, 0, 458764, -1073741745, 0, 458771, -1073741816, 0, 524290, 12, 0, 524305, 14, 0, 589840, 1, 0, 589841, 1, 0, 589842, 1, 0, 589843, 2, 0 )
+
+[node name="isiklar" type="Node2D" parent="." index="2"]
+
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="bahce" type="Light2D" parent="isiklar" index="0"]
+
+position = Vector2( -10, -240 )
+enabled = true
+editor_only = false
+texture = ExtResource( 6 )
+offset = Vector2( 0, 0 )
+texture_scale = 1.0
+color = Color( 1, 1, 1, 1 )
+energy = 0.4
+mode = 0
+range_height = 0.0
+range_z_min = -1024
+range_z_max = 1024
+range_layer_min = 0
+range_layer_max = 0
+range_item_cull_mask = 1
+shadow_enabled = true
+shadow_color = Color( 0, 0, 0, 0 )
+shadow_buffer_size = 2048
+shadow_gradient_length = 0.0
+shadow_filter = 0
+shadow_filter_smooth = 0.0
+shadow_item_cull_mask = 1
+_sections_unfolded = [ "Range", "Shadow" ]
+
+[node name="bahce2" type="Light2D" parent="isiklar" index="1"]
+
+position = Vector2( 800, -260 )
+enabled = true
+editor_only = false
+texture = ExtResource( 6 )
+offset = Vector2( 0, 0 )
+texture_scale = 1.0
+color = Color( 1, 1, 1, 1 )
+energy = 0.4
+mode = 0
+range_height = 0.0
+range_z_min = -1024
+range_z_max = 1024
+range_layer_min = 0
+range_layer_max = 0
+range_item_cull_mask = 1
+shadow_enabled = true
+shadow_color = Color( 0, 0, 0, 0 )
+shadow_buffer_size = 2048
+shadow_gradient_length = 0.0
+shadow_filter = 0
+shadow_filter_smooth = 0.0
+shadow_item_cull_mask = 1
+_sections_unfolded = [ "Range", "Shadow" ]
+
+[node name="salon" type="Light2D" parent="isiklar" index="2"]
+
+position = Vector2( 222.715, 448.753 )
+enabled = false
+editor_only = false
+texture = ExtResource( 6 )
+offset = Vector2( 0, 0 )
+texture_scale = 1.0
+color = Color( 1, 1, 1, 1 )
+energy = 0.5
+mode = 0
+range_height = 0.0
+range_z_min = -1024
+range_z_max = 1024
+range_layer_min = 0
+range_layer_max = 0
+range_item_cull_mask = 1
+shadow_enabled = true
+shadow_color = Color( 0, 0, 0, 0 )
+shadow_buffer_size = 2048
+shadow_gradient_length = 0.0
+shadow_filter = 0
+shadow_filter_smooth = 0.0
+shadow_item_cull_mask = 1
+_sections_unfolded = [ "Range", "Shadow" ]
+
+[node name="mutfak" type="Light2D" parent="isiklar" index="3"]
+
+position = Vector2( 637.989, 609.118 )
+enabled = true
+editor_only = false
+texture = ExtResource( 6 )
+offset = Vector2( 0, 0 )
+texture_scale = 1.0
+color = Color( 1, 1, 1, 1 )
+energy = 0.5
+mode = 0
+range_height = 0.0
+range_z_min = -1024
+range_z_max = 1024
+range_layer_min = 0
+range_layer_max = 0
+range_item_cull_mask = 1
+shadow_enabled = true
+shadow_color = Color( 0, 0, 0, 0 )
+shadow_buffer_size = 2048
+shadow_gradient_length = 0.0
+shadow_filter = 0
+shadow_filter_smooth = 0.0
+shadow_item_cull_mask = 1
+_sections_unfolded = [ "Range", "Shadow" ]
+
+[node name="ses" type="AudioStreamPlayer2D" parent="isiklar" index="4"]
+
+stream = ExtResource( 7 )
+volume_db = -5.0
+pitch_scale = 1.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="karekterler" type="Node2D" parent="." index="3"]
+
+script = ExtResource( 8 )
+bittiSes = NodePath("baba/end")
+
+[node name="cocuk" type="Sprite" parent="karekterler" index="0"]
+
+position = Vector2( 223.987, 371.694 )
+rotation = 3.00968
+texture = ExtResource( 9 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="ayak_ses" type="AudioStreamPlayer2D" parent="karekterler/cocuk" index="0"]
+
+stream = ExtResource( 10 )
+volume_db = -5.0
+pitch_scale = 0.7
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="baba" type="Sprite" parent="karekterler" index="1"]
+
+position = Vector2( 112.727, 385.574 )
+texture = ExtResource( 11 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="ayak_ses" type="AudioStreamPlayer2D" parent="karekterler/baba" index="0"]
+
+stream = ExtResource( 10 )
+volume_db = 0.0
+pitch_scale = 0.3
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="end" type="AudioStreamPlayer2D" parent="karekterler/baba" index="1"]
+
+stream = ExtResource( 12 )
+volume_db = -15.0
+pitch_scale = 0.7
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="anime" type="AnimationPlayer" parent="karekterler" index="2"]
+
+root_node = NodePath("..")
+autoplay = ""
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 1.0
+anims/babaKalkar = SubResource( 1 )
+anims/cocugunDonusu = SubResource( 2 )
+anims/cocukHareket = SubResource( 3 )
+anims/sahneBitis = SubResource( 4 )
+blend_times = [  ]
+_sections_unfolded = [ "Playback Options" ]
+
+[node name="kameraTasiyici" type="Node2D" parent="." index="4"]
+
+script = ExtResource( 13 )
+
+[node name="kamera" type="Camera2D" parent="kameraTasiyici" index="0"]
+
+position = Vector2( 540, 320 )
+anchor_mode = 1
+rotating = false
+current = true
+zoom = Vector2( 0.5, 0.5 )
+limit_left = -10000000
+limit_top = -10000000
+limit_right = 10000000
+limit_bottom = 10000000
+limit_smoothed = false
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+smoothing_speed = 2.0
+offset_v = 0.0
+offset_h = 0.0
+drag_margin_left = 0.0
+drag_margin_top = 0.0
+drag_margin_right = 0.0
+drag_margin_bottom = 0.0
+editor_draw_screen = true
+editor_draw_limits = false
+editor_draw_drag_margin = false
+_sections_unfolded = [ "Drag Margin", "Editor", "Offset", "Smoothing", "Transform" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="kapi" type="Sprite" parent="." index="5"]
+
+position = Vector2( 479.316, 193.209 )
+texture = ExtResource( 14 )
+offset = Vector2( 32, 32 )
+_sections_unfolded = [ "Offset", "Transform", "Visibility" ]
+
+[node name="ses" type="AudioStreamPlayer2D" parent="kapi" index="0"]
+
+stream = ExtResource( 15 )
+volume_db = 0.0
+pitch_scale = 0.8
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="ui" type="CanvasLayer" parent="." index="6"]
+
+layer = 1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+_sections_unfolded = [ "Pause" ]
+
+[node name="giris" parent="ui" index="0" instance=ExtResource( 16 )]
+
+visible = false
+
+[node name="yakalandi" type="Control" parent="ui" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Visibility" ]
+
+[node name="resim" type="TextureRect" parent="ui/yakalandi" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1366.0
+margin_bottom = 768.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 17 )
+stretch_mode = 0
+_sections_unfolded = [ "Visibility" ]
+
+[node name="timerYakalandi" type="Timer" parent="ui/yakalandi" index="1"]
+
+process_mode = 1
+wait_time = 4.0
+one_shot = true
+autostart = false
+
+[node name="diyalog" parent="ui" index="2" instance=ExtResource( 18 )]
+
+visible = false
+
+[node name="timer" type="Timer" parent="." index="7"]
+
+process_mode = 1
+wait_time = 3.0
+one_shot = false
+autostart = false
+
+[node name="fon" type="AudioStreamPlayer2D" parent="." index="8"]
+
+position = Vector2( 160.394, 461.618 )
+rotation = -1.43888
+stream = ExtResource( 19 )
+volume_db = -5.0
+pitch_scale = 1.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "diyalog"
+area_mask = 1
+
+[connection signal="finished" from="karekterler/baba/end" to="karekterler" method="_on_end_finished"]
+
+[connection signal="animation_finished" from="karekterler/anime" to="karekterler" method="_on_anime_animation_finished"]
+
+[connection signal="timeout" from="ui/yakalandi/timerYakalandi" to="." method="_on_timerYakalandi_timeout"]
+
+[connection signal="timeout" from="timer" to="." method="_on_timer_timeout"]
+
+

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/rollover1.ogg-f6bbcd11604249bd00303cbc8d67a1ba.oggstr"
+
+[deps]
+
+source_file="res://assets/sesler/rollover1.ogg"
+dest_files=[ "res://.import/rollover1.ogg-f6bbcd11604249bd00303cbc8d67a1ba.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/zapThreeToneDown.ogg-6f5eeb82c5c1823057dd516fa0c6c301.oggstr"
+
+[deps]
+
+source_file="res://assets/sesler/zapThreeToneDown.ogg"
+dest_files=[ "res://.import/zapThreeToneDown.ogg-6f5eeb82c5c1823057dd516fa0c6c301.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

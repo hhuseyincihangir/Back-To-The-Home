@@ -1,0 +1,805 @@
+[gd_scene load_steps=91 format=2]
+
+[ext_resource path="res://assets/tiles/tile_474.png" type="Texture" id=1]
+[ext_resource path="res://assets/tiles/tile_475.png" type="Texture" id=2]
+[ext_resource path="res://assets/tiles/tile_476.png" type="Texture" id=3]
+[ext_resource path="res://assets/tiles/tile_477.png" type="Texture" id=4]
+[ext_resource path="res://assets/tiles/tile_478.png" type="Texture" id=5]
+[ext_resource path="res://assets/tiles/tile_528.png" type="Texture" id=6]
+[ext_resource path="res://assets/tiles/tile_529.png" type="Texture" id=7]
+[ext_resource path="res://assets/tiles/tile_530.png" type="Texture" id=8]
+[ext_resource path="res://assets/tiles/tile_531.png" type="Texture" id=9]
+[ext_resource path="res://assets/tiles/tile_447.png" type="Texture" id=10]
+[ext_resource path="res://assets/tiles/tile_448.png" type="Texture" id=11]
+[ext_resource path="res://assets/tiles/tile_449.png" type="Texture" id=12]
+[ext_resource path="res://assets/tiles/tile_450.png" type="Texture" id=13]
+[ext_resource path="res://assets/tiles/tile_451.png" type="Texture" id=14]
+[ext_resource path="res://assets/tiles/tile_452.png" type="Texture" id=15]
+[ext_resource path="res://assets/tiles/tile_235.png" type="Texture" id=16]
+[ext_resource path="res://assets/tiles/tile_236.png" type="Texture" id=17]
+[ext_resource path="res://assets/tiles/tile_237.png" type="Texture" id=18]
+[ext_resource path="res://assets/tiles/tile_238.png" type="Texture" id=19]
+[ext_resource path="res://assets/tiles/tile_239.png" type="Texture" id=20]
+[ext_resource path="res://assets/tiles/tile_240.png" type="Texture" id=21]
+[ext_resource path="res://assets/tiles/tile_241.png" type="Texture" id=22]
+[ext_resource path="res://assets/tiles/tile_242.png" type="Texture" id=23]
+[ext_resource path="res://assets/tiles/tile_243.png" type="Texture" id=24]
+[ext_resource path="res://assets/tiles/tile_244.png" type="Texture" id=25]
+[ext_resource path="res://assets/tiles/tile_245.png" type="Texture" id=26]
+[ext_resource path="res://assets/tiles/tile_246.png" type="Texture" id=27]
+[ext_resource path="res://assets/tiles/tile_247.png" type="Texture" id=28]
+[ext_resource path="res://assets/tiles/tile_248.png" type="Texture" id=29]
+[ext_resource path="res://assets/tiles/tile_249.png" type="Texture" id=30]
+[ext_resource path="res://assets/tiles/tile_250.png" type="Texture" id=31]
+[ext_resource path="res://assets/tiles/tile_251.png" type="Texture" id=32]
+[ext_resource path="res://assets/tiles/tile_252.png" type="Texture" id=33]
+[ext_resource path="res://assets/tiles/tile_253.png" type="Texture" id=34]
+[ext_resource path="res://assets/tiles/tile_254.png" type="Texture" id=35]
+[ext_resource path="res://assets/tiles/tile_255.png" type="Texture" id=36]
+[ext_resource path="res://assets/tiles/tile_256.png" type="Texture" id=37]
+[ext_resource path="res://assets/tiles/tile_257.png" type="Texture" id=38]
+[ext_resource path="res://assets/tiles/tile_258.png" type="Texture" id=39]
+[ext_resource path="res://assets/tiles/tile_259.png" type="Texture" id=40]
+[ext_resource path="res://assets/tiles/tile_260.png" type="Texture" id=41]
+[ext_resource path="res://assets/tiles/tile_261.png" type="Texture" id=42]
+[ext_resource path="res://assets/tiles/tile_262.png" type="Texture" id=43]
+[ext_resource path="res://assets/tiles/tile_263.png" type="Texture" id=44]
+[ext_resource path="res://assets/tiles/tile_264.png" type="Texture" id=45]
+[ext_resource path="res://assets/tiles/tile_265.png" type="Texture" id=46]
+[ext_resource path="res://assets/tiles/tile_266.png" type="Texture" id=47]
+[ext_resource path="res://assets/tiles/tile_267.png" type="Texture" id=48]
+[ext_resource path="res://assets/tiles/tile_268.png" type="Texture" id=49]
+[ext_resource path="res://assets/tiles/tile_269.png" type="Texture" id=50]
+[ext_resource path="res://assets/tiles/tile_270.png" type="Texture" id=51]
+[ext_resource path="res://assets/tiles/tile_271.png" type="Texture" id=52]
+[ext_resource path="res://assets/tiles/tile_272.png" type="Texture" id=53]
+[ext_resource path="res://assets/tiles/tile_273.png" type="Texture" id=54]
+[ext_resource path="res://assets/tiles/tile_274.png" type="Texture" id=55]
+[ext_resource path="res://assets/tiles/tile_275.png" type="Texture" id=56]
+[ext_resource path="res://assets/tiles/tile_276.png" type="Texture" id=57]
+[ext_resource path="res://assets/tiles/tile_277.png" type="Texture" id=58]
+[ext_resource path="res://assets/tiles/tile_278.png" type="Texture" id=59]
+[ext_resource path="res://assets/tiles/tile_279.png" type="Texture" id=60]
+[ext_resource path="res://assets/tiles/tile_280.png" type="Texture" id=61]
+[ext_resource path="res://assets/tiles/tile_281.png" type="Texture" id=62]
+[ext_resource path="res://assets/tiles/tile_282.png" type="Texture" id=63]
+[ext_resource path="res://assets/tiles/tile_283.png" type="Texture" id=64]
+[ext_resource path="res://assets/tiles/tile_284.png" type="Texture" id=65]
+[ext_resource path="res://assets/tiles/tile_285.png" type="Texture" id=66]
+[ext_resource path="res://assets/tiles/tile_286.png" type="Texture" id=67]
+[ext_resource path="res://assets/tiles/tile_287.png" type="Texture" id=68]
+[ext_resource path="res://assets/tiles/tile_288.png" type="Texture" id=69]
+[ext_resource path="res://assets/tiles/tile_289.png" type="Texture" id=70]
+[ext_resource path="res://assets/tiles/tile_290.png" type="Texture" id=71]
+[ext_resource path="res://assets/tiles/tile_291.png" type="Texture" id=72]
+[ext_resource path="res://assets/tiles/tile_292.png" type="Texture" id=73]
+[ext_resource path="res://assets/tiles/tile_293.png" type="Texture" id=74]
+[ext_resource path="res://assets/tiles/tile_294.png" type="Texture" id=75]
+[ext_resource path="res://assets/tiles/tile_295.png" type="Texture" id=76]
+[ext_resource path="res://assets/tiles/tile_296.png" type="Texture" id=77]
+[ext_resource path="res://assets/tiles/tile_297.png" type="Texture" id=78]
+[ext_resource path="res://assets/tiles/tile_316.png" type="Texture" id=79]
+[ext_resource path="res://assets/tiles/tile_317.png" type="Texture" id=80]
+[ext_resource path="res://assets/tiles/tile_318.png" type="Texture" id=81]
+[ext_resource path="res://assets/tiles/tile_319.png" type="Texture" id=82]
+[ext_resource path="res://assets/tiles/tile_320.png" type="Texture" id=83]
+[ext_resource path="res://assets/tiles/tile_323.png" type="Texture" id=84]
+[ext_resource path="res://assets/tiles/tile_324.png" type="Texture" id=85]
+[ext_resource path="res://assets/tiles/tile_534.png" type="Texture" id=86]
+[ext_resource path="res://assets/tiles/tile_536.png" type="Texture" id=87]
+[ext_resource path="res://assets/tiles/tile_159.png" type="Texture" id=88]
+[ext_resource path="res://assets/tiles/tile_160.png" type="Texture" id=89]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+editor/display_folded = true
+texture = ExtResource( 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/StaticBody2D" index="0"]
+
+scale = Vector2( 3.15, 3.2 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite2" type="Sprite" parent="." index="1"]
+
+editor/display_folded = true
+position = Vector2( 64, 0 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Transform", "Z Index" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2/StaticBody2D" index="0"]
+
+scale = Vector2( 3.15, 3.15 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite3" type="Sprite" parent="." index="2"]
+
+editor/display_folded = true
+position = Vector2( 128, 0 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite3" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite3/StaticBody2D" index="0"]
+
+scale = Vector2( 3.2, 3.2 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite4" type="Sprite" parent="." index="3"]
+
+editor/display_folded = true
+position = Vector2( 0, 64 )
+texture = ExtResource( 4 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite4" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite4/StaticBody2D" index="0"]
+
+scale = Vector2( 3, 3 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite5" type="Sprite" parent="." index="4"]
+
+editor/display_folded = true
+position = Vector2( 64, 64 )
+texture = ExtResource( 5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite5" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite5/StaticBody2D" index="0"]
+
+scale = Vector2( 2.5, 2.5 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite6" type="Sprite" parent="." index="5"]
+
+editor/display_folded = true
+position = Vector2( 128, 64 )
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite6" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite6/StaticBody2D" index="0"]
+
+scale = Vector2( 3, 3 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite7" type="Sprite" parent="." index="6"]
+
+editor/display_folded = true
+position = Vector2( 0, 128 )
+texture = ExtResource( 7 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite7" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite7/StaticBody2D" index="0"]
+
+scale = Vector2( 2.5, 2.5 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite8" type="Sprite" parent="." index="7"]
+
+position = Vector2( 64, 128 )
+texture = ExtResource( 8 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite8" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite8/StaticBody2D" index="0"]
+
+scale = Vector2( 2.5, 2.5 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite9" type="Sprite" parent="." index="8"]
+
+position = Vector2( 128, 128 )
+texture = ExtResource( 9 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite9" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite9/StaticBody2D" index="0"]
+
+scale = Vector2( 2.5, 2.5 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite10" type="Sprite" parent="." index="9"]
+
+position = Vector2( 0, 192 )
+texture = ExtResource( 10 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite10" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite10/StaticBody2D" index="0"]
+
+scale = Vector2( 3, 3 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite11" type="Sprite" parent="." index="10"]
+
+position = Vector2( 64, 192 )
+texture = ExtResource( 11 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite11" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite11/StaticBody2D" index="0"]
+
+scale = Vector2( 3.5, 3 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite12" type="Sprite" parent="." index="11"]
+
+position = Vector2( 128, 192 )
+texture = ExtResource( 12 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite12" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite12/StaticBody2D" index="0"]
+
+scale = Vector2( 3.2, 3 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite13" type="Sprite" parent="." index="12"]
+
+position = Vector2( 0, 256 )
+texture = ExtResource( 13 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite13" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite13/StaticBody2D" index="0"]
+
+scale = Vector2( 2.6, 2.6 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite14" type="Sprite" parent="." index="13"]
+
+position = Vector2( 64, 256 )
+texture = ExtResource( 14 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite14" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite14/StaticBody2D" index="0"]
+
+scale = Vector2( 2.5, 2.5 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite15" type="Sprite" parent="." index="14"]
+
+position = Vector2( 128, 256 )
+texture = ExtResource( 15 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite15" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite15/StaticBody2D" index="0"]
+
+scale = Vector2( 2.5, 2.5 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="tile_235" type="Sprite" parent="." index="15"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 16 )
+
+[node name="tile_236" type="Sprite" parent="." index="16"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 17 )
+
+[node name="tile_237" type="Sprite" parent="." index="17"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 18 )
+
+[node name="tile_238" type="Sprite" parent="." index="18"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 19 )
+
+[node name="tile_239" type="Sprite" parent="." index="19"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 20 )
+
+[node name="tile_240" type="Sprite" parent="." index="20"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 21 )
+
+[node name="tile_241" type="Sprite" parent="." index="21"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 22 )
+
+[node name="tile_242" type="Sprite" parent="." index="22"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 23 )
+
+[node name="tile_243" type="Sprite" parent="." index="23"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 24 )
+
+[node name="tile_244" type="Sprite" parent="." index="24"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 25 )
+
+[node name="tile_245" type="Sprite" parent="." index="25"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 26 )
+
+[node name="tile_246" type="Sprite" parent="." index="26"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 27 )
+
+[node name="tile_247" type="Sprite" parent="." index="27"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 28 )
+
+[node name="tile_248" type="Sprite" parent="." index="28"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 29 )
+
+[node name="tile_249" type="Sprite" parent="." index="29"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 30 )
+
+[node name="tile_250" type="Sprite" parent="." index="30"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 31 )
+
+[node name="tile_251" type="Sprite" parent="." index="31"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 32 )
+
+[node name="tile_252" type="Sprite" parent="." index="32"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 33 )
+
+[node name="tile_253" type="Sprite" parent="." index="33"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 34 )
+
+[node name="tile_254" type="Sprite" parent="." index="34"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 35 )
+
+[node name="tile_255" type="Sprite" parent="." index="35"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 36 )
+
+[node name="tile_256" type="Sprite" parent="." index="36"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 37 )
+
+[node name="tile_257" type="Sprite" parent="." index="37"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 38 )
+
+[node name="tile_258" type="Sprite" parent="." index="38"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 39 )
+
+[node name="tile_259" type="Sprite" parent="." index="39"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 40 )
+
+[node name="tile_260" type="Sprite" parent="." index="40"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 41 )
+
+[node name="tile_261" type="Sprite" parent="." index="41"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 42 )
+
+[node name="tile_262" type="Sprite" parent="." index="42"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 43 )
+
+[node name="tile_263" type="Sprite" parent="." index="43"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 44 )
+
+[node name="tile_264" type="Sprite" parent="." index="44"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 45 )
+
+[node name="tile_265" type="Sprite" parent="." index="45"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 46 )
+
+[node name="tile_266" type="Sprite" parent="." index="46"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 47 )
+
+[node name="tile_267" type="Sprite" parent="." index="47"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 48 )
+
+[node name="tile_268" type="Sprite" parent="." index="48"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 49 )
+
+[node name="tile_269" type="Sprite" parent="." index="49"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 50 )
+
+[node name="tile_270" type="Sprite" parent="." index="50"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 51 )
+
+[node name="tile_271" type="Sprite" parent="." index="51"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 52 )
+
+[node name="tile_272" type="Sprite" parent="." index="52"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 53 )
+
+[node name="tile_273" type="Sprite" parent="." index="53"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 54 )
+
+[node name="tile_274" type="Sprite" parent="." index="54"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 55 )
+
+[node name="tile_275" type="Sprite" parent="." index="55"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 56 )
+
+[node name="tile_276" type="Sprite" parent="." index="56"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 57 )
+
+[node name="tile_277" type="Sprite" parent="." index="57"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 58 )
+
+[node name="tile_278" type="Sprite" parent="." index="58"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 59 )
+
+[node name="tile_279" type="Sprite" parent="." index="59"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 60 )
+
+[node name="tile_280" type="Sprite" parent="." index="60"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 61 )
+
+[node name="tile_281" type="Sprite" parent="." index="61"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 62 )
+
+[node name="tile_282" type="Sprite" parent="." index="62"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 63 )
+
+[node name="tile_283" type="Sprite" parent="." index="63"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 64 )
+
+[node name="tile_284" type="Sprite" parent="." index="64"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 65 )
+
+[node name="tile_285" type="Sprite" parent="." index="65"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 66 )
+
+[node name="tile_286" type="Sprite" parent="." index="66"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 67 )
+
+[node name="tile_287" type="Sprite" parent="." index="67"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 68 )
+
+[node name="tile_288" type="Sprite" parent="." index="68"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 69 )
+
+[node name="tile_289" type="Sprite" parent="." index="69"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 70 )
+
+[node name="tile_290" type="Sprite" parent="." index="70"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 71 )
+
+[node name="tile_291" type="Sprite" parent="." index="71"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 72 )
+
+[node name="tile_292" type="Sprite" parent="." index="72"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 73 )
+
+[node name="tile_293" type="Sprite" parent="." index="73"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 74 )
+
+[node name="tile_294" type="Sprite" parent="." index="74"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 75 )
+
+[node name="tile_295" type="Sprite" parent="." index="75"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 76 )
+
+[node name="tile_296" type="Sprite" parent="." index="76"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 77 )
+
+[node name="tile_297" type="Sprite" parent="." index="77"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 78 )
+
+[node name="tile_316" type="Sprite" parent="." index="78"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 79 )
+
+[node name="tile_317" type="Sprite" parent="." index="79"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 80 )
+
+[node name="tile_318" type="Sprite" parent="." index="80"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 81 )
+
+[node name="tile_319" type="Sprite" parent="." index="81"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 82 )
+
+[node name="tile_320" type="Sprite" parent="." index="82"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 83 )
+
+[node name="tile_323" type="Sprite" parent="." index="83"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 84 )
+
+[node name="tile_324" type="Sprite" parent="." index="84"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 85 )
+
+[node name="tile_534" type="Sprite" parent="." index="85"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 86 )
+
+[node name="tile_536" type="Sprite" parent="." index="86"]
+
+position = Vector2( 633, -292 )
+texture = ExtResource( 87 )
+
+[node name="tile_159" type="Sprite" parent="." index="87"]
+
+position = Vector2( 540, 40 )
+texture = ExtResource( 88 )
+
+[node name="tile_160" type="Sprite" parent="." index="88"]
+
+position = Vector2( 688, 47 )
+texture = ExtResource( 89 )
+
+
