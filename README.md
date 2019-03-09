@@ -22,4 +22,12 @@ Genç çocuk, arkadaşlarıyla geçirdiği eğlenceli bir günün ardından geç
 + Ahmet ATAŞOĞLU - Programmer
 + Mehmet KÜÇÜK - Designer
 
+## Tanıtım Videosu
 
+ [![Back to the Home ](https://img.youtube.com/vi/JEXyvq7eCxY/0.jpg)](http://www.youtube.com/watch?v=JEXyvq7eCxY "BacktotheHome")
+
+## Ekran Görüntüleri
+
+![BacktotheHomeGörsel-1](https://ggj.s3.amazonaws.com/styles/feature_image__wide/games/screenshots/ekran_alintisi_4.png?itok=FSIaTKZQ&timestamp=1548595899)
+
+![BacktotheHomeGörsel-1](https://ggj.s3.amazonaws.com/styles/feature_image__wide/games/screenshots/ekran_alintisi2_1.png?itok=Xt93-7hP&timestamp=1548595899)
